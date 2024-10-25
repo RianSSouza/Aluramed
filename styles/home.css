@@ -1,0 +1,30 @@
+.home{
+    display: flex;
+    align-items: center;
+    padding: 2em 3em 0 1em;
+    gap: 1em;
+}
+
+.home__perfil{
+    width: 57px;
+    border-radius: 50%;
+}
+
+
+.home__info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+.home__info strong{
+    color: var(--cinza-principal);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.home__info p{
+    color: var(--cinza);
+    font-size: 14px;
+    font-weight: 400;
+}

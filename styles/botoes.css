@@ -1,0 +1,35 @@
+.agenda__conteudo-ações{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botões__ligar-video, .botões__ligar-audio{
+    width: 139px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.botões__ligar-video{
+    background-color: var(--laranja);
+    border: none;
+    color: var(--branco);
+}
+
+.botões__ligar-audio{
+    border: 1px solid var(--cinza-secundario);
+    background-color: var(--branco);
+    color: var(--cinza-principal);
+}
+
+.botões__endereço{
+    width: 296px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--azul);
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: 500;
+}

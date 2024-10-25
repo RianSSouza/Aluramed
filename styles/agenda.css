@@ -1,0 +1,85 @@
+.agenda__data{
+    padding: 2em 1em 1em;
+}
+
+.agenda__card{
+    background-color: var(--branco);
+    margin: 0 1em 1em;
+    
+    border-radius: 8px;
+}
+
+.agenda__container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    padding: 1em 1em;
+    border-bottom: 1px solid var(--cinza-claro);
+}
+
+.agenda__data strong{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--cinza-principal);
+}
+
+.agenda__card-paciente{
+    display: flex;
+}
+
+.agenda__info-paciente{
+    display: flex;
+    gap: 1em;
+}
+
+.info-paciente{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.info-paciente strong{
+    color: var(--cinza-principal);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.info-paciente span{
+    color: var(--cinza);
+    font-weight: 400;
+    font-size: 12px;
+    background-image: url('../icons/Camera.svg');
+    background-repeat: no-repeat;
+    padding-left: 2em;
+}
+
+.paciente__image{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.button-chat{
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--branco-secundario);
+    background-image: url('../icons/chat1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.agenda__conteudo{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 0.8em;
+}
+
+.agenda__conteudo p{
+    color: var(--cinza-principal);
+    font-weight: 500;
+    font-size: 12px;
+   
+}
