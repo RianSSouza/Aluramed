@@ -1,0 +1,113 @@
+.formulario, .container__formulario{
+    display: none;
+    z-index: 3;
+}
+
+
+@media screen and (min-width: 1440px){
+
+    .container__botão:checked ~ #overlay,
+    .container__botão:checked~.formulario{
+            display: flex;
+           
+      }
+
+    .formulario{
+        position: fixed;  
+        justify-content: center;
+        align-items: center;      
+        left: 45%;
+        top: 35%;    
+        background-color: var(--branco);
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+
+    }
+
+   .container__formulario{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; /* Para organizar os elementos verticalmente */
+    background-color: var(--branco);
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px; /* Largura fixa para o formulário */
+     
+   }
+
+   .formulario__titulo {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 1em;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.formulario__sub-titulo{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--cinza-principal);
+    font-size: 18px;
+}
+
+.tipo_consulta{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1em;
+    gap: 1em;
+}
+
+.formulario__paciente, 
+.formulario__observações {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="time"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--cinza);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.formulario__consulta {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--branco);
+    border:1px solid var(--azul);
+    color: var(--azul);
+}
+
+}
+
+@media screen and (min-width: 2560px){
+    .formulario{
+        left: 40%;
+        top: 25%;
+    }
+}

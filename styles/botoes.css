@@ -33,3 +33,15 @@
     font-size: 14px;
     font-weight: 500;
 }
+
+@media screen and (min-width: 1440px){
+    .botões__ligar-video, .botões__ligar-audio, .botões__endereço{
+        width: 172px;
+        font-size: 16px;
+    }
+
+    .botões__endereço{
+        width: 368px;
+    }
+}
+

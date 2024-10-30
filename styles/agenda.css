@@ -2,6 +2,12 @@
     padding: 2em 1em 1em;
 }
 
+.agenda__data strong{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--cinza-principal);
+}
+
 .agenda__card{
     background-color: var(--branco);
     margin: 0 1em 1em;
@@ -15,12 +21,6 @@
     padding-bottom: 1em;
     padding: 1em 1em;
     border-bottom: 1px solid var(--cinza-claro);
-}
-
-.agenda__data strong{
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--cinza-principal);
 }
 
 .agenda__card-paciente{
@@ -82,4 +82,47 @@
     font-weight: 500;
     font-size: 12px;
    
+}
+
+@media screen and (min-width: 768px) {
+    .agenda__data{
+        padding-left: 1.5em;
+    }
+
+    .agenda ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .agenda__card{
+        width: 45%; 
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    .agenda ul{
+        justify-content: start;
+         padding: 2em 0 0 4em;
+    }
+
+    .agenda__card{
+        width: 400px;
+        height: 170px;
+        padding-bottom: 1em;
+    }
+
+    .paciente__image{
+        width: 48px;
+        height: 48px;
+    }
+
+    .info-paciente strong{
+        font-size: 18px;
+    }
+
+    .agenda__conteudo p{
+        font-size: 14px;
+    }
 }
